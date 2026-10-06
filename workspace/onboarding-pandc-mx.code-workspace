@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "onboarding-pandc-mx/canales-onboarding-pandc-frontend",
+			"repo": "git@github.com:avla-tech/canales-onboarding-pandc-frontend.git",
+			"principal-branch": "main-mx"
+		},
+		{
+			"path": "onboarding-pandc-mx/canales-onboarding-pandc-backend",
+			"repo": "git@github.com:avla-tech/canales-onboarding-pandc-backend.git",
+			"principal-branch": "main-mx"
+		}
+	],
+	"settings": {}
+}

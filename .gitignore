@@ -1,0 +1,19 @@
+# Credenciales locales (nunca versionar)
+secrets/
+.env
+
+# Knowledge graph generado por graphify (estado local, no código fuente)
+graphify-out/
+
+# Node.js (dependencias de los servidores MCP locales)
+node_modules/
+
+# Repos de proyectos clonados (ver workspace/artico-mx.code-workspace,
+# "repo" por carpeta) — repos aparte, con su propio git, no código fuente de este repo.
+# Los .code-workspace en la raíz de workspace/ sí se versionan; solo se ignoran las
+# carpetas que cuelgan de ellos (los repos clonados dentro).
+workspace/*/
+
+.cache/
+.claude/settings.local.json
+mcp-postgres.config.json

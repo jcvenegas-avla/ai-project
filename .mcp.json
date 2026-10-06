@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "atlassian": {
+      "type": "http",
+      "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+    },
+    "postgres": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "node_modules/mcp-postgres-multi/dist/index.js",
+        "--config",
+        "./mcp-postgres.config.json"
+      ]
+    },
+    "vectorstore": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["mcp/vectorstore/server.js"]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "canales-onboarding-gt-usa/canales-onboarding-gt-usa-frontend",
+			"repo": "git@github.com:avla-tech/canales-onboarding-gt-usa-frontend.git",
+			"principal-branch": "main"
+		},
+		{
+			"path": "canales-onboarding-gt-usa/canales-onboarding-gt-usa-backend",
+			"repo": "git@github.com:avla-tech/canales-onboarding-gt-usa-backend.git",
+			"principal-branch": "main"
+		}
+	],
+	"settings": {}
+}
