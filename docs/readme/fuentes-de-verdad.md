@@ -7,6 +7,7 @@ Ningún agente debe asumir información — cada uno consulta primero la fuente 
 | Jira | `product-owner`, `tech-lead` |
 | Workspace (ver [`docs/readme/workspaces-de-referencia.md`](./workspaces-de-referencia.md)) | `developer` |
 | Jira, Jira Soporte, Workspace | `soporte` |
+| Jira (CDA + tickets del pase), Workspace, doc/IA del proyecto (reglas de pase) | `pase-produccion` |
 | PostgreSQL (`dev`/`qa`/`prod`, vía `/db`) | `developer`, `soporte` |
 
 Los agentes de planificación (Product Owner, Tech Lead) necesitan visibilidad de negocio para decidir alcance, diseño y backlog; el agente de ejecución (Developer) trabaja directamente sobre el código del Workspace declarado para el proyecto.
@@ -42,4 +43,4 @@ La integración está **versionada en [`.mcp.json`](../../.mcp.json)** (servidor
 
 Para dejar todo listo o diagnosticar qué falta, ejecutar **`/setup-connections`**: el agente `connector` auto-detecta el contexto (tabla *Proyectos*), verifica la conexión y guía paso a paso lo que falte, reportando un checklist ✅ / ⚠️ / ❌.
 
-> **Conexión obligatoria antes de avanzar:** todo agente que dependa de Jira (`product-owner`, `tech-lead`, `soporte`) debe verificar la conexión antes de cualquier paso que la requiera. Si no está conectada, debe **detenerse** y preguntar explícitamente al usuario si desea conectarse ahora (ejecutando **`/setup-connections`**, agente `connector`) antes de continuar. Si el usuario decide no conectarse, el agente no debe asumir información de Jira: debe declarar la limitación explícitamente y acotar su salida a lo que sí pueda resolver sin ella. Nunca continuar en silencio sin conexión verificada.
+> **Conexión obligatoria antes de avanzar:** todo agente que dependa de Jira (`product-owner`, `tech-lead`, `soporte`, `pase-produccion`) debe verificar la conexión antes de cualquier paso que la requiera. Si no está conectada, debe **detenerse** y preguntar explícitamente al usuario si desea conectarse ahora (ejecutando **`/setup-connections`**, agente `connector`) antes de continuar. Si el usuario decide no conectarse, el agente no debe asumir información de Jira: debe declarar la limitación explícitamente y acotar su salida a lo que sí pueda resolver sin ella. Nunca continuar en silencio sin conexión verificada.

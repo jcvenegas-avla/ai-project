@@ -1,5 +1,7 @@
 # Branching Strategy
 
+> Modelo genérico del framework. Los **pases a producción con ticket CDA** siguen el flujo de ramas declarado por cada proyecto en su `doc/IA/pase-produccion.md` (ver README, sección *Agente de Pases de Producción*), que tiene prioridad sobre este documento.
+
 ```mermaid
 gitGraph
     commit id: "Inicio"
