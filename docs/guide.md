@@ -43,6 +43,7 @@ No existe un agente coordinador: cada comando se invoca manualmente, en este ord
 | `tech-lead` | Requirements → Design (si aplica) + Epic/Stories/Tasks/Subtasks |
 | `developer` | Task de Jira → Código + Tests |
 | `connector` | Verifica y guía la conexión con Jira |
+| `pase-produccion` | Tickets del pase → CDA + ramas + versiones + PRs (orquesta el pase a producción) |
 
 ## 5. Estructura relevante del repositorio
 

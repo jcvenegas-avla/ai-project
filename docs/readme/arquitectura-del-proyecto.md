@@ -10,10 +10,11 @@ mcp-postgres.config.json
 .claude/
     agents/
     commands/
+    skills/
     settings.json
 
 specs/
-    templates/
+    templates/      # incluye cda-template.md (formato general del CDA)
     workflow.md
     jira-workflow.md
     naming-conventions.md
@@ -52,6 +53,7 @@ WORKSPACEFILE["artico-mx.code-workspace"]
 CLAUDE[".claude"]
 AGENTS["agents"]
 COMMANDS["commands"]
+SKILLS["skills"]
 
 SPECS["specs"]
 TEMPLATES["templates"]
@@ -73,6 +75,7 @@ ROOT --> MCP
 
 CLAUDE --> AGENTS
 CLAUDE --> COMMANDS
+CLAUDE --> SKILLS
 
 SPECS --> TEMPLATES
 SPECS --> WORKFLOW["workflow.md"]

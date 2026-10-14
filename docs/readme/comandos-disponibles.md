@@ -9,4 +9,5 @@
 | `/implement`     | Implementa una Task                  |
 | `/release`       | Genera la Release (documentación manual previa) |
 | `/soporte`       | Diagnostica una incidencia y propone un plan + borrador de ticket SPDI |
+| `/pase`          | Gestiona un pase de producción con ticket CDA (ramas, versiones, PRs, descripción) |
 | `/db`            | Consulta una base de datos Postgres (dev/qa/prod), preguntando el entorno si no se especifica |
