@@ -20,6 +20,20 @@ Lista cerrada de proyectos permitidos y sus fuentes de contexto correspondientes
 | Schemas Postgres QA | `public` |
 | Schemas Postgres PROD | `public` |
 
+# Artico Perú
+
+| Característica | Detalle |
+| --- | --- |
+| Workspace | [`artico-pe.code-workspace`](../../workspace/artico-pe.code-workspace) |
+| Principal Branch | Definida por repositorio — ver el atributo `principal-branch` de cada entrada en `artico-pe.code-workspace` |
+| Jira | [AMPPE](https://grupoavla.atlassian.net/jira/software/projects/AMPPE) |
+| Jira Soporte | [SPDI](https://grupoavla.atlassian.net/jira/software/c/projects/SPDI/boards/102) |
+| País | `PE` |
+| Filtros JQL de Soporte | `project = SPDI AND type = "Incident Support" AND "negocio-país[checkboxes]" = Perú AND "sistema/plataforma responsable[checkboxes]" IN (Ártico, "Artico MP")` |
+| Schemas Postgres DEV | `public` |
+| Schemas Postgres QA | `public` |
+| Schemas Postgres PROD | `public` |
+
 # Canales Onboarding GT USA
 
 | Característica | Detalle |
