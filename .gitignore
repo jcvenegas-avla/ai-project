@@ -17,3 +17,6 @@ workspace/*/
 .cache/
 .claude/settings.local.json
 mcp-postgres.config.json
+
+# IDEs
+.idea/
