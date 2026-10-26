@@ -18,6 +18,9 @@ workspace/*/
 .claude/settings.local.json
 mcp-postgres.config.json
 
+
+# IDEs
+.idea/
 .claude/settings.json.graphify-bak
 
 #reversa
