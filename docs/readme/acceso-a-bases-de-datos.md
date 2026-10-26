@@ -2,11 +2,13 @@
 
 La integración con Postgres está **versionada en [`.mcp.json`](../../.mcp.json)** (servidor MCP `postgres`, stdio). Las credenciales de conexión viven por separado en [`mcp-postgres.config.json`](../../mcp-postgres.config.json), local a cada máquina.
 
-| Entorno | `label` en `mcp-postgres.config.json` | Uso previsto |
+Cada proyecto tiene su propia base por entorno. La conexión se identifica con un `label` de la forma **`<proyecto>-<entorno>`** (p. ej. `kamui-prod`, `siniestro-dev`), y las de cada proyecto están en la fila `Conexiones Postgres` de su ficha en [`proyectos.md`](./proyectos.md).
+
+| Entorno | Sufijo del `label` | Uso previsto |
 | --- | --- | --- |
-| Desarrollo | `dev` | Exploración y pruebas sin restricciones. |
-| QA | `qa` | Pruebas y validación previas a producción. |
-| Producción | `prod` | Solo cuando sea estrictamente necesario — datos reales. |
+| Desarrollo | `-dev` | Exploración y pruebas sin restricciones. |
+| QA | `-qa` | Pruebas y validación previas a producción. |
+| Producción | `-prod` | Solo cuando sea estrictamente necesario — datos reales. |
 
 Consultar una base con el comando **`/db <dev|qa|prod> <consulta>`**. Si se omite el entorno, Claude **debe detenerse y preguntar** cuál de los tres usar antes de ejecutar cualquier consulta — nunca asume un entorno por defecto. La misma regla aplica a cualquier agente (`developer`, `soporte`, etc.) que necesite datos reales de Postgres en medio de su trabajo sin que el entorno haya quedado explícito.
 

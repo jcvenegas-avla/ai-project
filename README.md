@@ -15,6 +15,7 @@ Este README es solo un índice. Cada sección se movió a su propio archivo dent
 | Acceso a Bases de Datos | [`docs/readme/acceso-a-bases-de-datos.md`](./docs/readme/acceso-a-bases-de-datos.md) |
 | Flujo de los Agentes | [`docs/readme/flujo-de-los-agentes.md`](./docs/readme/flujo-de-los-agentes.md) |
 | Agente de Pases de Producción | [`docs/readme/agente-de-pases-de-produccion.md`](./docs/readme/agente-de-pases-de-produccion.md) |
+| Agente de Reversa de Movimientos | [`docs/soporte/kamui-mx/agente-de-reversa-de-movimientos.md`](./docs/soporte/kamui-mx/agente-de-reversa-de-movimientos.md) |
 | Estructura de Specifications | [`docs/readme/estructura-de-specifications.md`](./docs/readme/estructura-de-specifications.md) |
 | Comandos Disponibles | [`docs/readme/comandos-disponibles.md`](./docs/readme/comandos-disponibles.md) |
 | Convenciones | [`docs/readme/convenciones.md`](./docs/readme/convenciones.md) |

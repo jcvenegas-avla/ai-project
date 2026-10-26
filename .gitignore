@@ -17,3 +17,11 @@ workspace/*/
 .cache/
 .claude/settings.local.json
 mcp-postgres.config.json
+
+.claude/settings.json.graphify-bak
+
+#reversa
+?/
+jmeter.log
+jmeter/apache-jmeter-5.4.3
+jmeter/jdk-17
