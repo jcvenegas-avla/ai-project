@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "kamui-backend",
+            "repo": "git@github.com:avla-tech/kamui-backend.git",
+			"principal-branch": "main"
+		},
+		{
+			"path": "front-facturacion",
+            "repo": "git@bitbucket.org:avla_ti/front-facturacion.git",
+			"principal-branch": "master"
+		},
+		{
+			"path": "kamui-liquibase",
+			"repo": "git@github.com:avla-tech/kamui-liquibase.git",
+			"principal-branch": "master"
+		}
+	],
+	"settings": {}
+}

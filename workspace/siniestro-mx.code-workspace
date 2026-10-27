@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "SINIESTRIOS/back-siniestro",
+			"repo": "git@bitbucket.org:avla_ti/back-siniestro.git",
+			"principal-branch": "master"
+		},
+		{
+			"path": "SINIESTRIOS/frontend-siniestro",
+			"repo": "git@bitbucket.org:avla_ti/frontend-siniestro.git",
+			"principal-branch": "master"
+		},
+		{
+			"path": "SINIESTRIOS/db-scripts-mongo-siniestro-cicd",
+			"repo": "git@bitbucket.org:avla_ti/db-scripts-mongo-siniestro-cicd.git",
+			"principal-branch": "master"
+		},
+		{
+			"path": "SINIESTRIOS/siniestro-liquibase",
+			"repo": "git@github.com:avla-tech/siniestro-liquibase.git",
+			"principal-branch": "master"
+		}
+	],
+	"settings": {}
+}
