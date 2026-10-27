@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "workspace/onboarding-mx/portal-agentes-api-mx",
+			"repo": "git@bitbucket.org:avla_ti/portal-agentes-api-mx.git",
+			"principal-branch": "master"
+		},
+		{
+			"path": "workspace/onboarding-mx/portal-agentes-mx-frontend",
+			"repo": "git@bitbucket.org:avla_ti/portal-agentes-mx-frontend.git",
+			"principal-branch": "master"
+		}
+	],
+	"settings": {}
+}

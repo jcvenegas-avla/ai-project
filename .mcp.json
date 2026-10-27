@@ -2,7 +2,7 @@
   "mcpServers": {
     "atlassian": {
       "type": "http",
-      "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+      "url": "https://mcp.atlassian.com/v2/mcp"
     },
     "postgres": {
       "type": "stdio",
@@ -17,6 +17,15 @@
       "type": "stdio",
       "command": "node",
       "args": ["mcp/vectorstore/server.js"]
+    },
+    "oracle-sqlcl": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "-e",
+        "const {spawn}=require('node:child_process');const path=require('node:path');const exe=process.platform==='win32'?'sql.exe':'sql';const child=spawn(path.resolve('mcp/sqlcl/bin',exe),['-mcp'],{stdio:'inherit'});child.on('error',e=>{console.error(e.message);process.exit(1)});child.on('exit',code=>process.exit(code??1));"
+      ],
+      "env": {}
     }
   }
 }
