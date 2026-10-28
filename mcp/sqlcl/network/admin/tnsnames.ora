@@ -1,0 +1,35 @@
+AMARU_MX_DEV =
+  (DESCRIPTION =
+    (ADDRESS =
+      (PROTOCOL = TCP)
+      (HOST = amaru-dev-db-mx.avla.com)
+      (PORT = 1521)
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = ORCL)
+    )
+  )
+
+AMARU_MX_QA =
+  (DESCRIPTION =
+    (ADDRESS =
+      (PROTOCOL = TCP)
+      (HOST = amaru-qa-db-mx.avla.com)
+      (PORT = 1521)
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = ORCL)
+    )
+  )
+
+AMARU_MX_PROD =
+  (DESCRIPTION =
+    (ADDRESS =
+      (PROTOCOL = TCP)
+      (HOST = amaru-prod-db-mx.avla.com)
+      (PORT = 1521)
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = ORCL)
+    )
+  )

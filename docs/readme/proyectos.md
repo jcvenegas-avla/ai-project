@@ -76,6 +76,35 @@ Lista cerrada de proyectos permitidos y sus fuentes de contexto correspondientes
 | Schemas Postgres QA | `api_onboarding_pc_qa` |
 | Schemas Postgres PROD | `api_onboarding_pc_prod` |
 
+# Onboarding Fianzas México
+
+| Característica | Detalle |
+| --- | --- |
+| Workspace | [`onboarding-pandc-mx.code-workspace`](../../workspace/onboarding-mx.code-workspace) |
+| Principal Branch | Definida por repositorio — ver el atributo `principal-branch` de cada entrada en `onboarding-mx.code-workspace` |
+| Jira | [OPCMX](https://grupoavla.atlassian.net/jira/software/projects/OPCMX/boards/1231) |
+| Jira Soporte | [SPDI](https://grupoavla.atlassian.net/jira/software/c/projects/SPDI/boards/102) |
+| País | `MX` |
+| Filtros JQL de Soporte | `project = SPDI AND type = "Incident Support" AND "negocio-país[checkboxes]" = México AND "sistema/plataforma responsable[checkboxes]" = "Onboarding P&C"` |
+| Schemas Postgres DEV | `api_onboarding_pc_dev` |
+| Schemas Postgres QA | `api_onboarding_pc_qa` |
+| Schemas Postgres PROD | `api_onboarding_pc_prod` |
+
+# Amaru MX
+
+| Característica | Detalle |
+| --- | --- |
+| Workspace | [`onboarding-pandc-mx.code-workspace`](../../workspace/amaru-mx.code-workspace) |
+| Principal Branch | Definida por repositorio — ver el atributo `principal-branch` de cada entrada en `amaru-mx.code-workspace` |
+| Jira | [AMARUMX](https://grupoavla.atlassian.net/jira/software/projects/OPCMX/boards/1231) |
+| Jira Soporte | [SPDI](https://grupoavla.atlassian.net/jira/software/c/projects/SPDI/boards/102) |
+| País | `MX` |
+| Filtros JQL de Soporte | `project = SPDI AND type = "Incident Support" AND "negocio-país[checkboxes]" = México AND "sistema/plataforma responsable[checkboxes]" = "Onboarding P&C"` |
+| Schemas Postgres DEV | `api_onboarding_pc_dev` |
+| Schemas Postgres QA | `api_onboarding_pc_qa` |
+| Schemas Postgres PROD | `api_onboarding_pc_prod` |
+
+
 # Kamui México
 
 | Característica | Detalle |

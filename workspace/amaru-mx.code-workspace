@@ -1,0 +1,53 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "workspace/amaru-mx/backend/",
+			"repo": "git@github.com:avla-tech/amaru-api-caucion.git",
+			"principal-branch": "main"
+		},
+		{
+			"path": "workspace/amaru-mx/backend/",
+			"repo": "git@github.com:avla-tech/amaru-api-cliente.git",
+			"principal-branch": "main"
+		},
+			{
+			"path": "workspace/amaru-mx/backend/",
+			"repo": "git@github.com:avla-tech/amaru-api-global.git",
+			"principal-branch": "main"
+		},
+			{
+			"path": "workspace/amaru-mx/backend/",
+			"repo": "git@github.com:avla-tech/amaru-api-operaciones.git",
+			"principal-branch": "main"
+		},
+			{
+			"path": "workspace/amaru-mx/backend/",
+			"repo": "git@github.com:avla-tech/amaru-library-common-core.git",
+			"principal-branch": "main"
+		},
+			{
+			"path": "workspace/amaru-mx/backend/",
+			"repo": "git@github.com:avla-tech/amaru-library-core-negocio.git",
+			"principal-branch": "main"
+		},		
+			{
+			"path": "workspace/amaru-mx/frontend/",
+			"repo": "git@github.com:avla-tech/amaru-front-ssge.git",
+			"principal-branch": "main"
+		},
+			{
+			"path": "workspace/amaru-mx/frontend/",
+			"repo": "git@github.com:avla-tech/amaru-front-library-web-components.git",
+			"principal-branch": "main"
+		},
+			{
+			"path": "workspace/amaru-mx/frontend/",
+			"repo": "git@github.com:avla-tech/amaru-front-library-web-minuta.git",
+			"principal-branch": "main"
+		}
+	],
+	"settings": {}
+}
