@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "artico-pe/api-artico",
+			"repo": "git@bitbucket.org:avla_ti/api-artico.git",
+			"principal-branch": "master-pe"
+		},
+		{
+			"path": "artico-pe/artico-frontend",
+			"repo": "git@github.com:avla-tech/artico-frontend.git",
+			"principal-branch": "main-pe"
+		}
+	],
+	"settings": {}
+}

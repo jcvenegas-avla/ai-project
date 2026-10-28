@@ -18,14 +18,13 @@ El servidor `postgres` lee `mcp-postgres.config.json` al iniciar y expone cada c
 
 ## 2. Configurar las credenciales
 
-Editar [`mcp-postgres.config.json`](../../mcp-postgres.config.json) en la raíz del proyecto. Ya trae la estructura de los 3 entornos con los campos vacíos:
+Editar [`mcp-postgres.config.json`](../../mcp-postgres.config.json) en la raíz del proyecto. Hay una entrada por proyecto y entorno:
 
 ```json
 {
   "connections": [
-    { "label": "dev",  "host": "", "port": "", "user": "", "password": "", "database": "", "enabled": true },
-    { "label": "qa",   "host": "", "port": "", "user": "", "password": "", "database": "", "enabled": true },
-    { "label": "prod", "host": "", "port": "", "user": "", "password": "", "database": "", "enabled": true }
+    { "label": "siniestro-dev",  "host": "", "port": "5432", "user": "", "password": "", "database": "", "enabled": true, "readOnly": true },
+    { "label": "siniestro-prod", "host": "", "port": "5432", "user": "", "password": "", "database": "", "enabled": true, "readOnly": true }
   ]
 }
 ```
@@ -34,13 +33,14 @@ Completar por entorno:
 
 | Campo | Significado |
 | --- | --- |
-| `label` | Nombre del entorno (`dev` / `qa` / `prod`) — no cambiarlo, es lo que usa `/db` para elegir la conexión. |
+| `label` | `<proyecto>-<entorno>` (p. ej. `kamui-prod`). Tiene que coincidir con la fila `Conexiones Postgres` del proyecto en `proyectos.md`, que es lo que usan `/db` y los agentes para elegir la conexión. |
 | `host` | Host o IP del servidor Postgres de ese entorno. |
 | `port` | Puerto (`5432` por defecto en Postgres). |
 | `user` | Usuario de conexión. |
 | `password` | Password del usuario. |
 | `database` | Nombre de la base a la que conectar. |
 | `enabled` | `true` para que el entorno quede disponible; `false` para desactivarlo sin borrar la entrada. |
+| `readOnly` | `true` por defecto: el servidor ejecuta cada consulta dentro de `BEGIN TRANSACTION READ ONLY`. No ponerlo en `false`. |
 
 Después de editar el archivo, reiniciar Claude Code (o recargar los servidores MCP) para que el servidor `postgres` tome las credenciales nuevas.
 
